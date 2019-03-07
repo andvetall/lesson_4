@@ -16,3 +16,13 @@ var womansBag = {
     }
 }
 console.log (womansBag)
+
+// 3 (5 points)
+
+function testConstructor(age, hobby){
+    this.age = age || 50
+    this.hobby = hobby || "Tenis"
+    this.addProperty = function( name, value){
+    	this[name] = value
+    }
+}
